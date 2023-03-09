@@ -10,8 +10,6 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #016cc3, #191e29);
-  background-attachment: fixed;
   color: #fff;
 }
 
@@ -76,6 +74,8 @@ body {
 
 /* Greeting */
 .hero {
+  background: linear-gradient(to bottom, #016cc3, #191e29);
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -138,17 +138,19 @@ body {
 
 /* About Me */
 .about-me {
-  /* color: var(--color-text); */
+  color: var(--color-text);
   text-align: justify;
-  height: 100vh;
+  height: 50vh;
+  margin: 0 2rem 0 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  justify-items: baseline;
   align-items: center;
 }
 
 .about-me__introduction-container {
-  outline: 1px solid #000;
+  line-height: 2;
+  margin-left: 2rem;
 }
 
 .about-me__introduction-title {
@@ -156,10 +158,23 @@ body {
   font-size: 1.7rem;
 }
 
+.about-me__introduction-description-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .about-me__image-container {
+  margin-right: 2rem;
   text-align: center;
 }
 
 .about-me__image {
-  width: 200px;
+  width: 250px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+/* Projects */
+.projects {
+  color: var(--color-text);
 }
