@@ -177,4 +177,59 @@ body {
 /* Projects */
 .projects {
   color: var(--color-text);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__title-container {
+  width: 100%;
+  text-align: center;
+}
+
+.projects__title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projects__card-project-container {
+  width: 90vw;
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.projects__card-project {
+  outline: 1px solid #000;
+  width: 19rem;
+  height: 19rem;
+  margin: 0;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__card-project-image {
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.projects__card-project-title {
+  font-size: 1.2rem;
+}
+
+.projects__card-project-lang {
+  font-weight: 300;
+}
+
+.porjects__card-project-button {
+  color: #000;
 }
