@@ -198,18 +198,17 @@ body {
 .projects__card-project-container {
   width: 90vw;
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   justify-items: center;
   align-items: center;
 }
 
 .projects__card-project {
-  outline: 1px solid #000;
   width: 19rem;
   height: 19rem;
-  margin: 0;
   border-radius: 1rem;
+  box-shadow: 0 0 1rem #191e29;
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
@@ -230,6 +229,15 @@ body {
   font-weight: 300;
 }
 
-.porjects__card-project-button {
+.projects__card-project-button {
   color: #000;
+  text-decoration: none;
+  border: 1px solid #191e29;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.projects__card-project-button:hover {
+  background-color: #191e29;
+  color: #fff;
 }
