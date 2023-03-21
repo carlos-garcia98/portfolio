@@ -1,4 +1,5 @@
 :root {
+  --gradient-color: #016cc3;
   --color-text: #fff;
 }
 
@@ -10,7 +11,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #016cc3, #191e29);
+  background: linear-gradient(to bottom, var(--gradient-color), #191e29);
   background-attachment: fixed;
   color: var(--color-text);
 }
@@ -20,7 +21,7 @@ h3 {
 }
 
 .header {
-  background-color: rgba(1, 108, 195, 0.424);
+  background-color: rgba(46, 46, 47, 0.424);
   width: 100%;
   height: 3rem;
   position: fixed;
@@ -82,6 +83,7 @@ h3 {
 /* Greeting */
 .hero {
   height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,6 +141,37 @@ h3 {
 .hero__start-button:hover {
   background-color: #191e29;
   border: 1px solid #191e29;
+}
+
+.hero__change-color {
+  width: 50px;
+  height: 50px;
+  background: conic-gradient(
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  color: #000;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero__change-color-text {
+  width: 50%;
+  margin: 1rem auto;
+  font-size: 0.8rem;
 }
 
 /* About Me */
