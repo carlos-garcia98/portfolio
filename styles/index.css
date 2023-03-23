@@ -187,7 +187,6 @@ h3 {
 
 .about-me__introduction-container {
   line-height: 2;
-  margin-left: 2rem;
 }
 
 .about-me__introduction-title {
@@ -196,13 +195,12 @@ h3 {
 }
 
 .about-me__introduction-description-container {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 }
 
 .about-me__image-container {
-  margin-right: 2rem;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .about-me__image {
@@ -302,12 +300,12 @@ h3 {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
 }
 
 .skills__skill-image {
   width: 100px;
+  margin: 0 auto;
 }
 
 /* Contact Me */
